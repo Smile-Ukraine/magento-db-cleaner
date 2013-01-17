@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Smile_DatabaseCleanup</name>
+    <version>1.0.0.1</version>
+    <stability>alpha</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Clear database from old wishlist / orders / quotes</summary>
+    <description>Delete expired wishlist / orders / quotes.&#xD;
+Also delete unused attributes values.</description>
+    <notes>First preview release</notes>
+    <authors><author><name>Smile</name><user>olzir</user><email>olzir@smile.fr</email></author></authors>
+    <date>2013-01-17</date>
+    <time>11:05:28</time>
+    <contents><target name="magecommunity"><dir name="Smile"><dir name="DatabaseCleanup"><dir name="Block"><dir name="Button"><file name="Abstract.php" hash="c86a2045cc8c7d469fd4c8e55df0fabf"/><file name="AnalyzeAttribute.php" hash="f3700f3bb69e269e35d4659d9f4902dc"/><file name="ClearAttribute.php" hash="b93ec8acbc0b2ad8bc73fd4724a00430"/><file name="ClearOrder.php" hash="bc08c3138c58b15e611a4fd0941739e0"/><file name="ClearQuote.php" hash="0d759f6253503cbf28b1859575d2a51d"/><file name="ClearWishlist.php" hash="1fe548e6c6969c374caa4996b1bc8c21"/></dir></dir><dir name="Model"><dir name="Abstract"><file name="Attribute.php" hash="21b0ef2bbde00d299e30af901e7e7cd6"/></dir><dir name="Analyze"><file name="Attribute.php" hash="3cbdf05a22410ce507523f67059b2921"/></dir><dir name="Clear"><file name="Attribute.php" hash="05267fa5b9ed6737d29c77a51ff75cb3"/><file name="Order.php" hash="900f2d349e2292b6886e81829aebcd77"/><file name="Quote.php" hash="87b161f4128a9848f5eaae1d28512de7"/><file name="Wishlist.php" hash="eea53f14cd6abe42ea0921c2aab367f4"/></dir><file name="Cron.php" hash="6d394be000664891be17b98fc276a300"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="5b35b4155d1a0977324c7f7e6829d124"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="04bda01a8872468d2ce9927aa7044e9e"/><file name="config.xml" hash="4b431ae5f58c56ed2f0115279d9a7bf4"/><file name="system.xml" hash="7a973b1ab139cbaddca0b3e5417efabc"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Smile_DatabaseCleanup" hash=""/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.1.0</max></php></required></dependencies>
+</package>

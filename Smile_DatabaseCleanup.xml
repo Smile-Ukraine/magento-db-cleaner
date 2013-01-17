@@ -1,0 +1,87 @@
+<_>
+   <form_key>of8BYCXd4e3Nv9Sw</form_key>
+   <name>Smile_DatabaseCleanup</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+      <version_ids>1</version_ids>
+   </version_ids>
+   <summary>Clear database from old wishlist / orders / quotes</summary>
+   <description>Delete expired wishlist / orders / quotes.
+Also delete unused attributes values.</description>
+   <license>OSL v3.0</license>
+   <license_uri/>
+   <version>1.0.0.1</version>
+   <stability>alpha</stability>
+   <notes>First preview release</notes>
+   <authors>
+      <name>
+         <name>Smile</name>
+      </name>
+      <user>
+         <user>olzir</user>
+      </user>
+      <email>
+         <email>olzir@smile.fr</email>
+      </email>
+   </authors>
+   <depends_php_min>5.1.0</depends_php_min>
+   <depends_php_max>6.1.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>              </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>mageetc</target>
+      </target>
+      <path>
+         <path/>
+         <path>Smile</path>
+         <path>modules/Smile_DatabaseCleanup</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>

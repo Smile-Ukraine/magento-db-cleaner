@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <database_cleanup translate="label">
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <label>Database Сleanup</label>
+            <tab>advanced</tab>
+            <groups>
+                <order translate="label">
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <label>Orders</label>
+                    <sort_order>1</sort_order>
+                    <fields>
+                        <expired translate="label">
+                            <label>Expiration time</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Time interval in days</comment>
+                        </expired>
+                        <cron translate="label">
+                            <label>Cleanup by cron</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cron>
+                        <clear translate="label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>smile_databaseCleanup/button_clearOrder</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </clear>
+                    </fields>
+                </order>
+
+                <quote translate="label">
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <label>Quote</label>
+                    <sort_order>2</sort_order>
+                    <fields>
+                        <expired translate="label">
+                            <label>Expiration time for quotes</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Time interval in days</comment>
+                        </expired>
+                        <cron translate="label">
+                            <label>Cleanup by cron</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cron>
+                        <clear translate="label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>smile_databaseCleanup/button_clearQuote</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </clear>
+                    </fields>
+                </quote>
+
+                <wishlist translate="label">
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <label>Wishlist</label>
+                    <sort_order>3</sort_order>
+                    <fields>
+                        <expired translate="label">
+                            <label>Expiration time</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Time interval in days</comment>
+                        </expired>
+                        <cron translate="label">
+                            <label>Cleanup by cron</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cron>
+                        <clear translate="label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>smile_databaseCleanup/button_clearWishlist</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </clear>
+                    </fields>
+                </wishlist>
+
+                <attribute translate="label">
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <label>Attributes</label>
+                    <sort_order>4</sort_order>
+                    <fields>
+                        <analyze translate="label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>smile_databaseCleanup/button_analyzeAttribute</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </analyze>
+                        <clear translate="label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>smile_databaseCleanup/button_clearAttribute</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </clear>
+                    </fields>
+                </attribute>
+            </groups>
+        </database_cleanup>
+    </sections>
+</config>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Smile_DatabaseCleanup>
+            <version>0.0.1</version>
+        </Smile_DatabaseCleanup>
+    </modules>
+    <global>
+        <blocks>
+            <smile_databaseCleanup>
+                <class>Smile_DatabaseCleanup_Block</class>
+            </smile_databaseCleanup>
+        </blocks>
+        <models>
+            <smile_databaseCleanup>
+                <class>Smile_DatabaseCleanup_Model</class>
+            </smile_databaseCleanup>
+        </models>
+        <helpers>
+            <smile_databasecleanup>
+                <class>Mage_Core_Helper</class>
+            </smile_databasecleanup>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <database_cleanup>
+                <use>admin</use>
+                <args>
+                    <module>Smile_DatabaseCleanup</module>
+                    <frontName>database_cleanup</frontName>
+                </args>
+            </database_cleanup>
+        </routers>
+    </admin>
+    <crontab>
+        <jobs>
+            <database_cleanup>
+                <schedule><cron_expr>0 6 * * *</cron_expr></schedule>
+                <run><model>smile_databaseCleanup/cron::cleanupAll</model></run>
+            </database_cleanup>
+        </jobs>
+    </crontab>
+</config>
